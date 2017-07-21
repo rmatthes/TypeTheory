@@ -12,7 +12,7 @@ A typical use for displayed categories is for constructing categories of structu
 
 Require Import UniMath.Foundations.Sets.
 Require Import UniMath.CategoryTheory.Categories.
-Require Import UniMath.CategoryTheory.Monads.
+Require Import UniMath.CategoryTheory.Monads.Monads.
 Require Import UniMath.Topology.Topology.
 
 Require Import TypeTheory.Auxiliary.Auxiliary.
@@ -371,7 +371,7 @@ Proof.
   apply homset_property.
 Qed.
 
-Lemma is_disp_category_functor_alg : is_univalent_disp disp_cat_functor_alg.
+Lemma is_univalent_disp_functor_alg : is_univalent_disp disp_cat_functor_alg.
 Proof. 
   use is_univalent_disp_from_SIP_data.
   - apply isaset_functor_alg_ob.
