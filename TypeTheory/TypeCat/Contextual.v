@@ -2,7 +2,12 @@
 (** This file provides a definition (and basic development) of contextual categories as split type-cats/CwA’s in which every object is uniquely expressible as an iterated extension of a chosen terminal object. *)
 
 Require Import UniMath.MoreFoundations.All.
-Require Import UniMath.CategoryTheory.All.
+
+Require Import UniMath.CategoryTheory.Core.Categories.
+Require Import UniMath.CategoryTheory.Core.Isos.
+Require Import UniMath.CategoryTheory.Core.Univalence.
+Require Import UniMath.CategoryTheory.limits.graphs.terminal.
+
 Require Import TypeTheory.Auxiliary.Auxiliary.
 Require Import TypeTheory.Auxiliary.CategoryTheory.
 Require Import TypeTheory.Auxiliary.Partial.

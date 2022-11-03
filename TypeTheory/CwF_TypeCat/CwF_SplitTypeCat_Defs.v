@@ -24,7 +24,14 @@ NB: we follow UniMath’s convention that _category_ does not assume saturation/
 
 
 Require Import UniMath.Foundations.Sets.
-Require Import UniMath.CategoryTheory.All. (* TODO: work out what’s actually needed and move into [CategoryTheoryImports]. *)
+Require Import UniMath.MoreFoundations.All.
+
+Require Import UniMath.CategoryTheory.DisplayedCats.Core.
+Require Import UniMath.CategoryTheory.DisplayedCats.Functors.
+Require Import UniMath.CategoryTheory.DisplayedCats.NaturalTransformations.
+Require Import UniMath.CategoryTheory.DisplayedCats.Total.
+
+(* TODO: work out what’s actually needed and move into [CategoryTheoryImports]. *)
 Require Import TypeTheory.Auxiliary.CategoryTheoryImports.
 
 Require Import TypeTheory.Auxiliary.Auxiliary.
@@ -67,7 +74,7 @@ Section Obj_Ext_Structures_Disp_Cat_Data.
 
   Definition obj_ext_disp_π {Ty} (X : obj_ext_ob_mor Ty) {Γ} A
     : comp_ext_disp X Γ A --> Γ
-  := pr2 (X Γ A).
+    := pr2 (X Γ A).
 
   Local Notation π := obj_ext_disp_π.
 

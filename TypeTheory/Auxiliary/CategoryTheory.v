@@ -1,11 +1,22 @@
 Require Import UniMath.Foundations.All.
 Require Import UniMath.MoreFoundations.All.
 
-Require Import UniMath.CategoryTheory.All.
-(* a few libraries need to be reloaded after “All”,
-   to claim precedence on overloaded names *)
-Require Import UniMath.CategoryTheory.limits.graphs.limits.
+Require Import UniMath.CategoryTheory.Core.Categories.
+Require Import UniMath.CategoryTheory.Core.Functors.
+Require Import UniMath.CategoryTheory.Core.NaturalTransformations.
+Require Import UniMath.CategoryTheory.Core.Isos.
+Require Import UniMath.CategoryTheory.Core.Univalence.
+Require Import UniMath.CategoryTheory.FunctorCategory.
+Require Import UniMath.CategoryTheory.opp_precat.
+Require Import UniMath.CategoryTheory.Equivalences.Core.
+Require Import UniMath.CategoryTheory.Equivalences.CompositesAndInverses.
+Require Import UniMath.CategoryTheory.Adjunctions.Core.
 Require Import UniMath.CategoryTheory.limits.pullbacks.
+Require Import UniMath.CategoryTheory.limits.graphs.terminal.
+Require Import UniMath.CategoryTheory.limits.graphs.initial.
+Require Import UniMath.CategoryTheory.catiso.
+Require Import UniMath.CategoryTheory.CategoryEquality.
+Require Import UniMath.CategoryTheory.DisplayedCats.ComprehensionC.
 
 Require Import TypeTheory.Auxiliary.Auxiliary.
 

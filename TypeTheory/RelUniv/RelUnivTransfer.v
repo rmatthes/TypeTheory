@@ -33,6 +33,7 @@ Require Import TypeTheory.RelUniv.Transport_along_Equivs.
 Require Import TypeTheory.RelUniv.RelUniv_Cat_Simple.
 Require Import TypeTheory.RelUniv.RelUniv_Cat.
 Require Import UniMath.CategoryTheory.catiso.
+Require Import UniMath.CategoryTheory.DisplayedCats.Constructions.
 
 Section RelUniv_Transfer.
 
